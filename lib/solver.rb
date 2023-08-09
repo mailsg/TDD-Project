@@ -1,9 +1,9 @@
 class Solver
-  def factorial(n)
-    raise ArgumentError, 'Argument should be a non-negative integer' if n.negative?
-    return 1 if n.zero?
+  def factorial(value)
+    raise ArgumentError, 'Argument should be a non-negative integer' if value.negative?
+    return 1 if value.zero?
 
-    (1..n).reduce(:*)
+    (1..value).reduce(:*)
   end
 
   def reverse(word)
